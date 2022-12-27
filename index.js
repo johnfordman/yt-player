@@ -422,7 +422,7 @@ class YouTubePlayer extends EventEmitter {
         start: opts.start,
       },
       events: {
-        onApiChange: () => this._onApiChange(data),
+        onApiChange: (data) => this._onApiChange(data),
         onReady: () => this._onReady(videoId),
         onStateChange: (data) => this._onStateChange(data),
         onPlaybackQualityChange: (data) => this._onPlaybackQualityChange(data),
