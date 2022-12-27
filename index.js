@@ -198,6 +198,10 @@ class YouTubePlayer extends EventEmitter {
     return (this._ready && this._player.getPlaybackRate()) || 1;
   }
 
+  getCaption() {
+    return (this._ready && this._player.getOption("captions", "track")) || null;
+  }
+
   getAvailablePlaybackRates() {
     return (this._ready && this._player.getAvailablePlaybackRates()) || [1];
   }
