@@ -1,5 +1,5 @@
 {
-  "name": "yt-player",
+  "name": "@johnfordman/yt-player",
   "description": "Simple, robust YouTube Iframe Player API",
   "version": "3.6.1",
   "author": {
